@@ -1,0 +1,34 @@
+---
+title: "Milestone 5"
+author: "Olly Gill"
+date: "10/15/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(readr)
+library(tidyverse)
+
+athlete_events <- read_csv("athlete_events.csv")
+summer_medals <- read_csv("summer.csv")
+winter_medals <- read_csv("winter.csv")
+```
+
+### Summary
+This dashboard gives you the option to explore data collected from both the summer and winter Olympics games from 1896 to 2016. You have the option to select particular data from a variety of categories including particular Games, events, medals won, athlete gender, and so much more.
+
+
+### The Data
+For this project I colleted three separate data sets. All of the visualizations are based on these data sets. Part of the data (athlete_events) is from www.sports-reference.com collected in May of 2018 and the other two data sets (summer_medals and winter_medals) were provided by the IOC Research and Reference Service and published by The Guardian's Datablog. 
+
+The athlete_events data set contains information for 270,960 different events ranging from the start of the Olympics in 1896 to the 2016 games hosted in Rio. The winter_medals data set contains 5,770 different medals won by all different athltes during the winter games, and the summer_medals contains 30,065 different medals won by all different athletes during the summer games.
+
+
+### About Me: Olly Gill
+I am a sophomore undergraduate student at Harvard concentrating in Economics and pursuing a secondary in Global Health and Health Policy. At Harvard, I play on the Women's Lacrosse Team and find myself getting involved in many different organizations in the athletic department. I have grown up my whole life loving sports and as a result I wanted to use this project as an opportunity to use my passion for data science and sports to explore the Olympic Games beyond what you see on television.
+
+Feel free to reach out and contact me at ogill@college.harvard.edu or connect with me on LinkedIn HERE (insert link in HERE).
+
+The source code for this Shiny App can be found at my GitHub HERE (insert link in HERE).
